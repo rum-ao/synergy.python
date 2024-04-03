@@ -7,14 +7,14 @@ while (col<n):
     if a == 0:
         zero+=1
 print(zero)
-
+######################################
 x = int(input())
 col = 0
 for i in range(1, x+1):
     if x%i==0:
         col+=1
 print(col)
-
+######################################
 a = int(input())
 b = int(input())
 c=[]

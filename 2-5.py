@@ -7,8 +7,7 @@ elif a < 0 and a % 2 == 0:
    print("Otricatel'noe chetnoe chislo")
 else:
    print("Chislo ne yavlyaetsya chetnim")
-    
-
+#################################################
 word = (input("Vvedite slovo: ")).lower()
 vowels = "aeiuy"
 count_vowels = 0

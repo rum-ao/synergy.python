@@ -1,6 +1,7 @@
 a = float(input("Vvedite 1 storonu pryamougolnika: "))
 b = float(input("Vvedite 2 storonu pryamougolnika: "))
 print(a*b)
+print(2*(a+b))
 #####################################################
 a = int(input("Vvedite celoe pyatiznachnoe chislo: "))
 ed = a%10

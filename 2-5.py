@@ -20,3 +20,17 @@ for i in range(0, len(word)):
 print(count_vowels)
 print(count_consonants)
 print(f'a = {"False" if word.count("a") == 0 else word.count("a")}, e = {"False" if word.count("e") == 0 else word.count("e")}, i = {"False" if word.count("i") == 0 else word.count("i")}, o = {"False" if word.count("o") == 0 else word.count("o")}, y = {"False" if word.count("y") == 0 else word.count("y")}, u = {"False" if word.count("u") == 0 else word.count("u")}')
+###################################################
+x = int(input("vvedite summu investiciy: "))
+a = int(input("skolko y Michaela?: "))
+b = int(input("skolo u Ivana?: "))
+if a >= x and b >= x:
+    print(2)
+elif a >= x:
+    print("Michael")
+elif b >= x:
+    print("Ivan")
+elif a + b >= x:
+    print(1)
+else:
+    print(0)

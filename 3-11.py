@@ -36,16 +36,18 @@ pets = {
 
 def get_suffix(age):
     suffix = ''
-    if age%10 == 2 or age%10 == 3 or age%10 == 4:
-        suffix = 'goda'
-    elif age%10 == 1:
-        suffix = 'god'
+    if (age > 4) and (age < 21):
+    suffix = 'let'
     else:
-        suffix = 'let'
+        if age%10==1:
+            suffix = 'god'
+        elif age%10 < 5:
+            suffix = 'goda'
+        else:
+            suffix = 'let'
     return suffix
-
-
-
+    
+    
 def create():
     last = collections.deque(pets, maxlen=1)[0]
 

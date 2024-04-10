@@ -1,15 +1,17 @@
 pets = dict()
 name = input("vvedite imya zhivotnogo: ")
-pet_name = list(pets.keys())
 vid = input("vvedite vid zhivotnogo: ")
 age = int(input("vvedite vozrast zhivotnogo: "))
 age_prist = ''
-if age%10 == 2 or age%10 == 3 or age%10 == 4:
-    age_prist = 'goda'
-elif age%10 == 1:
-    age_prist = 'god'
-else:
+if (age > 4) and (age < 21):
     age_prist = 'let'
+else:
+    if age%10==1:
+        age_prist = 'god'
+    elif age%10 < 5:
+        age_prist = 'goda'
+    else:
+        age_prist = 'let'
 pet_owner = input("vvedite imya vladeltca zhivotnogo: ")
 char = {"Vid pitomca":vid, "Vozrast pitomca":age, "imya vladeltca":pet_owner}
 pets[name] = char
